@@ -1,3 +1,15 @@
 *{
     margin: 0;
 }
+.parte-top{
+    height: 20vh;
+    width: 100vw;
+}
+.parte-medio{
+    height: 60vh;
+    width: 100vw;
+}
+.parte-bot{
+    height: 60vh;
+    width: 100vw;
+}
