@@ -1,15 +1,25 @@
 *{
-    margin: 0;
+    margin: 0px;
 }
 .parte-top{
     height: 20vh;
     width: 100vw;
+    display: flex;
 }
 .parte-medio{
     height: 60vh;
     width: 100vw;
 }
 .parte-bot{
-    height: 60vh;
+    height: 20vh;
     width: 100vw;
+    display: flex;
+}
+.top-izquierda{
+    height: 100%;
+    width: 50%;
+}
+.top-derecha{
+    height: 100%;
+    width: 50%;
 }
