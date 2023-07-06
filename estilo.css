@@ -1,25 +1,131 @@
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
-.parte-top{
-    height: 20vh;
+/*RECODARTORIO CUIDADO AL USAR FLOTANTE PORQE MUEVE EL POSICIONAMIENTO DE LAS CAJAS FUERA DE SU LUGAR DESEADO*/
+#parte-top{
+    height: 15vh;
     width: 100vw;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;   
 }
-.parte-medio{
-    height: 60vh;
+#menu-logo{
+    height: 15vh;
+    width: 50vw;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu-web{
+    height: 15vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+#parte-medio{
+    height: 100vh;
     width: 100vw;
 }
-.parte-bot{
-    height: 20vh;
-    width: 100vw;
+#parte-bot{
+    height: 10vh;
+    width: 100vw;    
+}
+#parte-bot>p{
+    display: inline;
+}
+/*primero termines de trabjar con la parte del menu*/
+#menu-web a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+#menu-web a:hover{
+    border-bottom: 6px solid white;
+}
+/*cuando termine el menu luego avansaremos el cuerpo*/
+/*trabajando con la PARTE TOP de la parte central*/
+#presentacion{    
+    height: 70%;
+    width: 100%;    
+}
+.about1{
+    height: 70%;
+    width: 100%;    
     display: flex;
 }
-.top-izquierda{
+.saludo{
     height: 100%;
-    width: 50%;
+    width: 70%;    
+    font-size: 3em;
+    line-height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.top-derecha{
+.foto{
     height: 100%;
-    width: 50%;
+    width: 30%;
+    background-color: green;
+}
+.about2{
+    height: 30%;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+/*trabajando con la PARTE DEL MEDIO de la parte central*/
+#conocimientos{
+    height: 80%;
+    width: 100%;    
+}
+#lenguajes{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.marcos{
+    height: 200px;
+    width: 200px;    
+    text-decoration: none;
+    font-size: 2.5em;
+    margin-left: 100px;
+    background-color: black;
+    color: white;
+    transition: transform 1s;
+    transition-timing-function: linear;    
+}
+.marcos:hover{
+    background-color: green;
+    transform: rotateY(180deg);    
+}
+.marcos:hover::after{
+    content: "deberia aparecer";
+}
+
+/*.marcos:hover::after{    
+    content: "deberia aparecer";
+    transform: rotateY(80deg);
+}*/
+
+/*trabajando con la PARTE DE ABAJO de la parte central*/
+#proyectos{
+    height: 50%;
+    width: 100%;
 }
